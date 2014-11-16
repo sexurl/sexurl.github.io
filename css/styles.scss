@@ -105,6 +105,22 @@ body {
 .container {
   max-width:590px;
   margin: 0 auto;
+  font-size: 0;
+
+  .bl {
+    font-size: 1rem;
+    display: block;
+    float: left;
+    width: 50%;
+
+    h2 { font-size: 40px; }
+  }
+}
+
+.avaler {
+  background-image: url('../img/avaler@2x.png');
+  background-position: top 50%;
+  background-color: #fee951;
 }
 
 #active-block{
