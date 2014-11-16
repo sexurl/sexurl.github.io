@@ -1,0 +1,10 @@
+gems:
+  - jekyll-sass-converter
+  - liquid
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+sass:
+  sass_dir: css
