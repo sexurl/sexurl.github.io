@@ -20,8 +20,50 @@ h1, h2, h3 {
 }
 
 h2 {
+  margin-top: 10px;
   font-size: 30px;
   line-height: 30px;
+}
+
+h3{
+  // margin-bottom: 10px;
+}
+
+
+.inner-bl h3{
+  margin-bottom: 0;
+
+  &:first-child{
+    margin-top: 0;
+  }
+}
+h3~p{
+  margin-top: 0;
+}
+
+.wrap-inner{
+  width: 200%;
+  overflow: hidden;
+
+   // -webkit-transition: all 250ms ease-out;
+   //  -o-transition: all 250ms ease-out;
+   //  transition: all 250ms ease-out;
+}
+
+.intro{
+
+}
+
+// .bl.active{
+//   .wrap-inner{
+//     width: 100%;
+//   }
+// }
+
+.inner-bl{
+  float: left;
+  width: 50%;
+  height: 300px;
 }
 
 body {
@@ -29,6 +71,11 @@ body {
   color: #4b4eff;
   font-family: "museo-sans",sans-serif;
   margin: 0;
+}
+
+.increase{
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .header {
@@ -167,15 +214,49 @@ body {
 }
 
 .condoms {
-  background-image: url('../img/condoms.png');
   background-color: #4b4eff;
   background-position: bottom;
   height: 300px;
   color: #f2f2f2;
+
+  .inner-bl{
+    &:nth-child(1){
+       background: url('../img/condoms.png') bottom left / 100% auto no-repeat;
+    }
+
+    &:nth-child(2){
+      background-color:#353cbc;
+    }
+
+    &:nth-child(3){
+      background-color:#353cbc;
+    }
+  }
+}
+
+.cunni{
+  background:#f9b7b2;
+  .inner-bl{
+    &:nth-child(1){
+      background: url(../img/cunnilingus.png) bottom right / 227px auto no-repeat;
+    }
+    &:nth-child(3){
+      background:#ec9b99;
+    }
+    &:nth-child(4){
+      background:#f2a9a7;
+    }
+  }
+  color:#fff;
+  height: 300px;
+
+   h2 {
+      color:#4b4eff;
+    }
 }
 
 .colored {
-  height: 180px;
+  height: 150px;
 
   &.colored-w {
     background: #fff;

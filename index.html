@@ -45,6 +45,34 @@
     </div>
   </div>
   <div class="container">
+    <div class="bl increase cunni">
+      <div class="wrap-inner">
+        <div class="inner-bl">
+          <div class="content">
+            <h2>Cunnilingus</h2>
+            <p></p>
+          </div>
+        </div>
+        <div class="inner-bl">
+          <div class="content">
+            <h3>Le cunnilingus, c’est lorsque le partenaire stimule la vulve et le clitoris avec sa langue et ses lèvres. Ta partenaire pourra aussi te dire de la «manger» ou de la «lècher». Cette pratique est courante lors des préliminaires et peut parfois durer plusieurs minutes. </h3>
+          </div>
+        </div>
+        <div class="inner-bl">
+          <div class="content">
+            <h3>En levrette : </h3><p>La fille est à quatre pattes et son partenaire se place derrière elle.</p>
+            <h3>À califourchon : </h3><p>Le garçon est allongé sur le dos et sa partenaire vient se placer au dessus de lui.</p>
+            <h3>À califourchon : </h3><p>Le garçon est à genou sur le sol et sa partenaire se place debout par-dessus.</p>
+          </div>
+        </div>
+        <div class="inner-bl">
+          <div class="content">
+            <p>En voulant à tout prix jouir ou faire jouir, on met sur ses épaules et celles de son partenaire une pression énorme. La seule chose qui compte c’est le plaisir :Le plaisir de donner
+Le plaisir de recevoir</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="bl avaler">
       <div class="content">
         <h2>Avaler <br>ou non ?</h2>
@@ -53,8 +81,29 @@
     </div>
     <div class="bl condoms increase">
       <div class="intro">
-        <div class="content">
-          <h2>Il existe des condoms avec plusieurs saveurs.</h2>
+        <div class="wrap-inner">
+          <div class="inner-bl">
+            <div class="content">
+              <h2>Il existe différents types de condoms</h2>
+              <p></p>
+            </div>
+          </div>
+          <div class="inner-bl">
+            <div class="content">
+              <h3>Les préservatifs, c’est important. Il en existe de toutes les tailles, de toutes les couleurs et de toutes les saveurs. Il peut être utile d’essayer le préservatif avant de passer à l’acte, question de savoir si la taille vous convient.</h3>
+            </div>
+          </div>
+          <div class="inner-bl">
+            <div class="content">
+              <h3>En Crystal (Manix) : </h3><p> le préservatif hypoallergénique en latex déprotéinisé, c'est-à-dire pauvre en protéines de latex naturel. </p>
+              <h3>Femidom (Terpan) : </h3><p>Le préservatif féminin est une gaine à base de polyuréthane et ne contient pas de latex.</p>
+            </div>
+          </div>
+          <div class="inner-bl">
+            <div class="content">
+              <p>Le condom pour femme est une gaine de polyuréthane de forme cylindrique qui a un peu l'allure d'un sac de plastique à l'envers à insérer dans le vagin avant les rapports sexuels. Le condom retient le sperme, l'empêchant ainsi d'entrer dans le vagin.</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="more">
@@ -102,5 +151,44 @@
     <img src="img/bulle_chat.png" width="44">
   </a>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.bl').each(function(index, el){
+        var child = $(this).find('.wrap-inner');
+        if(child.length>0){
+          var newHeight = child.outerHeight();
+          $(el).data('oldHeight', $(el).outerHeight());
+          $(el).data('newHeight', newHeight);
+        }
+      });
+      $('.bl').on('click', function(ev){
+        var oldHeight = $(this).data('oldHeight');
+        var newHeight = $(this).data('newHeight');
+        var child = $(this).find('.wrap-inner');
+
+        if(oldHeight && newHeight && !$(this).hasClass('active')){
+          child.animate({
+            'width':'100%'
+          }, 250);
+          $(this).animate({
+            'width':'100%',
+            'height':newHeight
+          }, 250);
+          $(this).addClass('active');
+        }else{
+          child.animate({
+            'width':'200%'
+          }, 250);
+           $(this).animate({
+            'width':'50%',
+            'height':oldHeight
+          }, 250);
+          $(this).removeClass('active');
+        }
+
+        ev.preventDefault();
+      })
+    })
+  </script>
 </body>
 </html>
