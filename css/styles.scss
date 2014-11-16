@@ -1,4 +1,27 @@
 ---
 ---
 
-body { color: red; }
+#layout {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#blocks {
+  .block {
+    display: block;
+    float: left;
+    cursor: pointer;
+    height: 100px;
+    text-align: center;
+  }
+
+  .level-1 {
+    width: 100%;
+    background: #999;
+  }
+
+  .level-2 {
+    width: 50%;
+    background: #BBB;
+  }
+}
