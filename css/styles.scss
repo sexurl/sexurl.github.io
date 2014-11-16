@@ -6,6 +6,18 @@
   margin: 0 auto;
 }
 
+#active-block{
+  overflow:hidden;
+}
+
+#calc{
+  width: 500px;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  overflow:hidden;
+}
+
 #blocks {
   .block {
     display: block;

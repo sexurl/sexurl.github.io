@@ -71,8 +71,15 @@ function onBlockClick(){
   $content += '<h2>' + block.title + '</h2>';
   $content += '<p>' + block.text + '</p>';
 
-  $activeBlock.html($content);
-  orderBlocks(block);
+  $('#calc').html($content);
+  $newHeight = $('#calc').height();
+
+  $activeBlock.animate({
+    'height':$newHeight
+  }, 150, function(){
+    $activeBlock.html($content);
+    orderBlocks(block);
+  });
 }
 
 function orderBlocks(current){
@@ -90,10 +97,10 @@ function orderBlocks(current){
 
   $blocks = parseBlocks(data.blocks, 1, null);
 
-  disappearBlocks().then(function(){
-    $('html,body').animate({
+  $('html,body').animate({
       scrollTop:0
-    }, 500);
+    });
+  disappearBlocks().then(function(){
     $c.html($blocks);
     appearBlocks();
   })
