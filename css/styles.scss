@@ -200,6 +200,32 @@ body {
   z-index: 3;
 }
 
+.img{
+  max-width:100%;
+  height: auto;
+}
+
+.full-width{
+  width: 100%;
+  overflow: hidden;
+  padding:40px 0;
+  background: #4b4eff;
+
+  .bl{
+    width: 44%;
+    padding: 0 3%;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.container {
+  max-width:590px;
+  margin: 0 auto;
+}
+
 @media (max-width: 600px) {
   .container {
     .bl {
