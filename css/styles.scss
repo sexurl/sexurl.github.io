@@ -13,7 +13,7 @@
   font-weight:  400;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Nanami Rounded';
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -143,6 +143,23 @@ body {
   }
 }
 
+.sexe-oral {
+  background-color: #4b4eff;
+  background-image: url('../img/sexe_oral.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f2f2f2;
+  height: 300px;
+
+  .container {
+    padding: 40px;
+
+    h2 { font-size: 60px; }
+    h3 { font-size: 30px; }
+  }
+}
+
 .avaler {
   background-image: url('../img/avaler.png');
   background-color: #fee951;
@@ -155,6 +172,25 @@ body {
   background-position: bottom;
   height: 300px;
   color: #f2f2f2;
+}
+
+.colored {
+  height: 180px;
+
+  &.colored-w {
+    background: #fff;
+    color: #4b4eff;
+  }
+
+  &.colored-b {
+    background: #4b4eff;
+    color: #3ee7ab;
+  }
+
+  &.colored-g {
+    background: #3ee7ab;
+    color: #4b4eff;
+  }
 }
 
 #active-block{
