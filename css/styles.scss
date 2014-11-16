@@ -13,6 +13,10 @@
     cursor: pointer;
     height: 100px;
     text-align: center;
+
+    -webkit-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
   }
 
   .level-1 {
