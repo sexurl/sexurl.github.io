@@ -143,6 +143,13 @@ body {
   }
 }
 
+#talk-now {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 3;
+}
+
 @media (max-width: 600px) {
   #blocks {
     .level-2 {
