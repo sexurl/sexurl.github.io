@@ -127,13 +127,7 @@ var data = {
         {
           title: 'Pourquoi le pénis devient dur ?',
           slug: 'specialiste-dur',
-          text: "C’est une érection. Ce phénomène physiologique fait que le pénis devient ferme et élargi. L’érection est le résultat de l’excitation sexuelle ou de l’attirance sexuelle.
-
-Après l’orgasme, le pénis perd sa fermeté!
-
-En état de stress ou de pression il arrive que l’homme perde son érection. Ne t’en fait pas, discute ou fais des préliminaires et ça reviendra!
-
-Les femmes aussi ont des érections mais clitoridienne!",
+          text: "C’est une érection. Ce phénomène physiologique fait que le pénis devient ferme et élargi. L’érection est le résultat de l’excitation sexuelle ou de l’attirance sexuelle. Après l’orgasme, le pénis perd sa fermeté! En état de stress ou de pression il arrive que l’homme perde son érection. Ne t’en fait pas, discute ou fais des préliminaires et ça reviendra! Les femmes aussi ont des érections mais clitoridienne!",
           tags: '#erection #bande #debander #sang #muscle #organe #excitation #biologique '
         }
       ]
