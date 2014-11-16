@@ -38,6 +38,7 @@ body {
       border: none;
       font-size: 16px;
       line-height: 26px;
+      height: 28px;
       width: 100%;
 
 
@@ -55,7 +56,7 @@ body {
     width: 5.5%;
 
     img {
-      margin-top: 14px;
+      margin-top: 16px;
       width: 25px;
     }
   }
@@ -152,7 +153,8 @@ body {
 
 @media (max-width: 480px) {
   .header {
-    .search { width: 64%; }
+    .search { width: 54%; }
+    .facebook { width: 15.5%; }
     .pro { display: none; }
   }
 }
