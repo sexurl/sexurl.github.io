@@ -19,33 +19,85 @@ body {
   .item {
     display: inline-block;
     letter-spacing: normal;
+    margin: 0 1.5% 0 1.5%;
+    text-align: center;
     vertical-align: top;
     zoom: 1;
   }
 
   h1 { margin:0; }
-  img { vertical-align: bottom; }
+  img { vertical-align: middle; }
 
   .search {
-    width: 50%;
-    padding: 8px 8px 8px 0;
+    width: 45%;
+    margin: 0 3% 0 3%;
+
+    .input { padding: 14px 0 14px; }
     input {
-      width: 100%;
       background: #f2f2f2;
       border: none;
       font-size: 16px;
       line-height: 26px;
+      width: 100%;
+
+
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
 
       &:focus {
         outline: #4b4eff solid 2px;
       }
     }
   }
-  .pro {
-    color: #3ee7ab;
+
+  .facebook {
+    width: 5.5%;
+
+    img {
+      margin-top: 14px;
+      width: 25px;
+    }
   }
-  .logo img {
-    width: 120px;
+
+  .pro {
+    margin-right: 0;
+    width: 16%;
+
+    a {
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 20px 8px 8px 8px;
+      text-decoration: none;
+      background-color: #3ee7ab;
+
+      -webkit-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      -moz-border-radius-bottomright: 3px;
+      -moz-border-radius-bottomleft: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+
+  .logo {
+    margin-left: 0;
+    width: 20%;
+    position: relative;
+    height: 56px;
+
+    img {
+      margin: 0;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -95,5 +147,12 @@ body {
     .level-2 {
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .search { width: 64%; }
+    .pro { display: none; }
   }
 }
