@@ -135,15 +135,26 @@ body {
     display: block;
     float: left;
     width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 
-    h2 { font-size: 40px; }
+    .content { padding: 20px; }
+    .more { display: none; }
   }
 }
 
 .avaler {
   background-image: url('../img/avaler@2x.png');
-  background-position: top 50%;
   background-color: #fee951;
+  height: 300px;
+}
+
+.condoms {
+  background-image: url('../img/condoms@2x.png');
+  background-color: #4b4eff;
+  background-position: bottom;
+  height: 300px;
+  color: #f2f2f2;
 }
 
 #active-block{
@@ -190,8 +201,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  #blocks {
-    .level-2 {
+  .container {
+    .bl {
       width: 100%;
     }
   }
